@@ -17,8 +17,19 @@ function myFunction() {
 myFunction();
 
 // Explanation: 
+// "The inner-most nested function has access to all other functions outside of it. This is it's scope. It doesn't work the other way though...outside functions don't have access to inside function variables."
 
 
 /* Task 2: Counter */
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+
+function summation(num){
+  let total = 0;
+  for (let i = 1; i <= num; i++){
+    total += i;
+  }
+  return total;
+  }
+
+  console.log(summation(4));
